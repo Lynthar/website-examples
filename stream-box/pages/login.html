@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - StreamBox</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" style="background: transparent;">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">▶</span>
+                <span>StreamBox</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="login-page">
+        <div class="login-card">
+            <h1>登录</h1>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="电子邮箱或手机号">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="密码">
+                </div>
+                <button type="submit" class="login-btn">登录</button>
+            </form>
+            <div style="display: flex; justify-content: space-between; margin-top: 16px; color: #b3b3b3; font-size: 0.9rem;">
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                    <input type="checkbox" style="width: 16px; height: 16px;">
+                    记住我
+                </label>
+                <a href="#" style="color: #b3b3b3;">需要帮助？</a>
+            </div>
+            <div style="margin-top: 60px; color: #737373;">
+                <p>首次使用 StreamBox？ <a href="register.html" style="color: #fff;">立即注册</a></p>
+            </div>
+            <p style="margin-top: 16px; font-size: 0.8rem; color: #8c8c8c;">
+                此页面受 reCAPTCHA 保护，以确保您不是机器人。
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

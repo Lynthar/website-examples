@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - 发现精彩游戏</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎮</span>
+                    <span class="logo-text">GameZone</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">商店</a></li>
+                    <li><a href="pages/library.html">游戏库</a></li>
+                    <li><a href="pages/community.html">社区</a></li>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">支持</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索游戏...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <a href="pages/cart.html" class="cart-btn">
+                    🛒 <span class="cart-count">3</span>
+                </a>
+                <a href="pages/login.html" class="user-btn">登录</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="slide-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+                    <div class="slide-content">
+                        <div class="slide-info">
+                            <span class="game-tag">新品上市</span>
+                            <h1>赛博朋克 2088</h1>
+                            <p>在霓虹闪烁的未来都市中，展开一段惊心动魄的冒险。开放世界RPG巨作，超过200小时的游戏内容。</p>
+                            <div class="slide-meta">
+                                <span class="rating">⭐ 9.2</span>
+                                <span class="tags">开放世界 · RPG · 科幻</span>
+                            </div>
+                            <div class="slide-actions">
+                                <a href="#" class="btn btn-primary">立即购买 ¥298</a>
+                                <a href="#" class="btn btn-outline">加入愿望单</a>
+                            </div>
+                        </div>
+                        <div class="slide-image">
+                            <div class="game-cover">
+                                <div class="cover-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-dot active"></button>
+                <button class="carousel-dot"></button>
+                <button class="carousel-dot"></button>
+                <button class="carousel-dot"></button>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🔥 限时特惠</h2>
+                    <div class="countdown">
+                        <span>距离结束还剩</span>
+                        <div class="time-box">23</div>:
+                        <div class="time-box">45</div>:
+                        <div class="time-box">12</div>
+                    </div>
+                </div>
+                <div class="offers-grid">
+                    <div class="offer-card large">
+                        <div class="offer-badge">-70%</div>
+                        <div class="offer-image" style="background: linear-gradient(45deg, #ff6b6b, #feca57);"></div>
+                        <div class="offer-info">
+                            <h3>暗黑破坏神 IV</h3>
+                            <div class="offer-price">
+                                <span class="original">¥398</span>
+                                <span class="current">¥119</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">-50%</div>
+                        <div class="offer-image" style="background: linear-gradient(45deg, #667eea, #764ba2);"></div>
+                        <div class="offer-info">
+                            <h3>艾尔登法环</h3>
+                            <div class="offer-price">
+                                <span class="original">¥298</span>
+                                <span class="current">¥149</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">-60%</div>
+                        <div class="offer-image" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                        <div class="offer-info">
+                            <h3>荒野大镖客2</h3>
+                            <div class="offer-price">
+                                <span class="original">¥249</span>
+                                <span class="current">¥99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">-45%</div>
+                        <div class="offer-image" style="background: linear-gradient(45deg, #fc4a1a, #f7b733);"></div>
+                        <div class="offer-info">
+                            <h3>博德之门3</h3>
+                            <div class="offer-price">
+                                <span class="original">¥298</span>
+                                <span class="current">¥164</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Releases -->
+        <section class="new-releases">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🆕 新品上架</h2>
+                    <a href="#" class="see-all">查看全部 →</a>
+                </div>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);"></div>
+                        <div class="game-info">
+                            <h3>星际公民</h3>
+                            <div class="game-meta">
+                                <span class="game-rating">⭐ 8.8</span>
+                                <span class="game-platform">PC</span>
+                            </div>
+                            <div class="game-price">¥268</div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(45deg, #834d9b, #d04ed6);"></div>
+                        <div class="game-info">
+                            <h3>最终幻想XVII</h3>
+                            <div class="game-meta">
+                                <span class="game-rating">⭐ 9.0</span>
+                                <span class="game-platform">PC · PS5</span>
+                            </div>
+                            <div class="game-price">¥398</div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(45deg, #1e3c72, #2a5298);"></div>
+                        <div class="game-info">
+                            <h3>战神：诸神黄昏</h3>
+                            <div class="game-meta">
+                                <span class="game-rating">⭐ 9.5</span>
+                                <span class="game-platform">PC · PS5</span>
+                            </div>
+                            <div class="game-price">¥348</div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(45deg, #403A3E, #BE5869);"></div>
+                        <div class="game-info">
+                            <h3>生化危机9</h3>
+                            <div class="game-meta">
+                                <span class="game-rating">⭐ 8.7</span>
+                                <span class="game-platform">PC · 全平台</span>
+                            </div>
+                            <div class="game-price">¥298</div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background: linear-gradient(45deg, #134E5E, #71B280);"></div>
+                        <div class="game-info">
+                            <h3>塞尔达传说：新章</h3>
+                            <div class="game-meta">
+                                <span class="game-rating">⭐ 9.8</span>
+                                <span class="game-platform">Switch</span>
+                            </div>
+                            <div class="game-price">¥399</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🎯 游戏分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #667eea, #764ba2);">
+                        <span class="category-icon">⚔️</span>
+                        <span class="category-name">动作冒险</span>
+                        <span class="category-count">1,234 款</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <span class="category-icon">🏎️</span>
+                        <span class="category-name">竞速运动</span>
+                        <span class="category-count">456 款</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <span class="category-icon">🎯</span>
+                        <span class="category-name">射击游戏</span>
+                        <span class="category-count">892 款</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <span class="category-icon">🧙</span>
+                        <span class="category-name">角色扮演</span>
+                        <span class="category-count">1,567 款</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #fa709a, #fee140);">
+                        <span class="category-icon">🧩</span>
+                        <span class="category-name">策略益智</span>
+                        <span class="category-count">678 款</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #a8edea, #fed6e3);">
+                        <span class="category-icon">🎭</span>
+                        <span class="category-name">模拟经营</span>
+                        <span class="category-count">543 款</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Sellers -->
+        <section class="top-sellers">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🏆 热销榜单</h2>
+                    <div class="tab-buttons">
+                        <button class="tab-btn active">本周</button>
+                        <button class="tab-btn">本月</button>
+                        <button class="tab-btn">年度</button>
+                    </div>
+                </div>
+                <div class="sellers-list">
+                    <div class="seller-item">
+                        <span class="rank rank-1">1</span>
+                        <div class="seller-image" style="background: linear-gradient(45deg, #1a1a2e, #16213e);"></div>
+                        <div class="seller-info">
+                            <h4>赛博朋克 2088</h4>
+                            <span class="seller-tags">开放世界 · RPG</span>
+                        </div>
+                        <div class="seller-price">¥298</div>
+                    </div>
+                    <div class="seller-item">
+                        <span class="rank rank-2">2</span>
+                        <div class="seller-image" style="background: linear-gradient(45deg, #667eea, #764ba2);"></div>
+                        <div class="seller-info">
+                            <h4>艾尔登法环</h4>
+                            <span class="seller-tags">动作 · 魂类</span>
+                        </div>
+                        <div class="seller-price">¥298</div>
+                    </div>
+                    <div class="seller-item">
+                        <span class="rank rank-3">3</span>
+                        <div class="seller-image" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                        <div class="seller-info">
+                            <h4>博德之门3</h4>
+                            <span class="seller-tags">RPG · 回合制</span>
+                        </div>
+                        <div class="seller-price">¥298</div>
+                    </div>
+                    <div class="seller-item">
+                        <span class="rank">4</span>
+                        <div class="seller-image" style="background: linear-gradient(45deg, #fc4a1a, #f7b733);"></div>
+                        <div class="seller-info">
+                            <h4>暗黑破坏神 IV</h4>
+                            <span class="seller-tags">动作RPG · 暗黑</span>
+                        </div>
+                        <div class="seller-price">¥398</div>
+                    </div>
+                    <div class="seller-item">
+                        <span class="rank">5</span>
+                        <div class="seller-image" style="background: linear-gradient(45deg, #834d9b, #d04ed6);"></div>
+                        <div class="seller-info">
+                            <h4>星际公民</h4>
+                            <span class="seller-tags">太空 · 模拟</span>
+                        </div>
+                        <div class="seller-price">¥268</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Games -->
+        <section class="free-games">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🎁 免费游戏</h2>
+                    <a href="#" class="see-all">查看全部 →</a>
+                </div>
+                <div class="free-games-grid">
+                    <div class="free-game-card">
+                        <div class="free-badge">限时免费</div>
+                        <div class="free-game-image" style="background: linear-gradient(45deg, #00b09b, #96c93d);"></div>
+                        <div class="free-game-info">
+                            <h3>堡垒之夜</h3>
+                            <p>大逃杀 · 建造</p>
+                            <div class="free-game-action">
+                                <span class="old-price">原价 ¥0</span>
+                                <a href="#" class="btn btn-primary btn-sm">立即领取</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="free-game-card">
+                        <div class="free-badge">本周限免</div>
+                        <div class="free-game-image" style="background: linear-gradient(45deg, #ee0979, #ff6a00);"></div>
+                        <div class="free-game-info">
+                            <h3>原神</h3>
+                            <p>开放世界 · 二次元</p>
+                            <div class="free-game-action">
+                                <span class="old-price">免费游玩</span>
+                                <a href="#" class="btn btn-primary btn-sm">立即下载</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="free-game-card">
+                        <div class="free-badge">永久免费</div>
+                        <div class="free-game-image" style="background: linear-gradient(45deg, #8E2DE2, #4A00E0);"></div>
+                        <div class="free-game-info">
+                            <h3>Apex英雄</h3>
+                            <p>射击 · 大逃杀</p>
+                            <div class="free-game-action">
+                                <span class="old-price">免费游玩</span>
+                                <a href="#" class="btn btn-primary btn-sm">立即下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">GameZone</span>
+                    </a>
+                    <p>发现精彩游戏，畅享无限乐趣</p>
+                    <div class="social-links">
+                        <a href="#">微博</a>
+                        <a href="#">微信</a>
+                        <a href="#">QQ</a>
+                        <a href="#">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>商店</h4>
+                    <a href="#">首页</a>
+                    <a href="#">发现</a>
+                    <a href="#">愿望单</a>
+                    <a href="#">积分商城</a>
+                </div>
+                <div class="footer-links">
+                    <h4>社区</h4>
+                    <a href="#">讨论区</a>
+                    <a href="#">创意工坊</a>
+                    <a href="#">直播</a>
+                    <a href="#">活动</a>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <a href="#">关于我们</a>
+                    <a href="#">工作机会</a>
+                    <a href="#">新闻中心</a>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="footer-links">
+                    <h4>支持</h4>
+                    <a href="#">帮助中心</a>
+                    <a href="#">退款政策</a>
+                    <a href="#">隐私政策</a>
+                    <a href="#">服务条款</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameZone. 保留所有权利。</p>
+                <div class="payment-methods">
+                    <span>支持：</span>
+                    <span>支付宝</span>
+                    <span>微信支付</span>
+                    <span>银联</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

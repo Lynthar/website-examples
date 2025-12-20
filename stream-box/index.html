@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamBox - 畅享精彩视频</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">▶</span>
+                    <span>StreamBox</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">剧集</a></li>
+                    <li><a href="#">动漫</a></li>
+                    <li><a href="#">综艺</a></li>
+                    <li><a href="#">纪录片</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <a href="pages/login.html" class="btn btn-primary">登录</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="content-badge">独家原创</span>
+                <h1>鱿鱼游戏 第二季</h1>
+                <p class="meta">2024 · 悬疑 · 惊悚 · 8集</p>
+                <p class="description">456名负债累累的玩家再次聚集，他们将在儿童游戏中争夺456亿韩元的奖金。但这一次，游戏规则发生了变化...</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-play">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        立即播放
+                    </a>
+                    <a href="#" class="btn btn-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        更多信息
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continue Watching -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row-header">
+                    <h2>继续观看</h2>
+                </div>
+                <div class="content-slider">
+                    <div class="content-card progress-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #1a1a2e, #16213e);"></div>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        <div class="card-info">
+                            <h3>黑暗荣耀</h3>
+                            <span>S1:E5 · 还剩 23 分钟</span>
+                        </div>
+                    </div>
+                    <div class="content-card progress-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #2c3e50, #4ca1af);"></div>
+                        <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                        <div class="card-info">
+                            <h3>请回答1988</h3>
+                            <span>S1:E12 · 还剩 48 分钟</span>
+                        </div>
+                    </div>
+                    <div class="content-card progress-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #834d9b, #d04ed6);"></div>
+                        <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+                        <div class="card-info">
+                            <h3>寄生虫</h3>
+                            <span>电影 · 还剩 1 小时 20 分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row-header">
+                    <h2>🔥 今日热播</h2>
+                    <a href="#" class="see-all">查看全部</a>
+                </div>
+                <div class="content-slider">
+                    <div class="content-card rank-card">
+                        <span class="rank-number">1</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #e74c3c, #c0392b);"></div>
+                    </div>
+                    <div class="content-card rank-card">
+                        <span class="rank-number">2</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #3498db, #2980b9);"></div>
+                    </div>
+                    <div class="content-card rank-card">
+                        <span class="rank-number">3</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #2ecc71, #27ae60);"></div>
+                    </div>
+                    <div class="content-card rank-card">
+                        <span class="rank-number">4</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #9b59b6, #8e44ad);"></div>
+                    </div>
+                    <div class="content-card rank-card">
+                        <span class="rank-number">5</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #f39c12, #e67e22);"></div>
+                    </div>
+                    <div class="content-card rank-card">
+                        <span class="rank-number">6</span>
+                        <div class="card-image" style="background: linear-gradient(45deg, #1abc9c, #16a085);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Movies -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row-header">
+                    <h2>热门电影</h2>
+                    <a href="#" class="see-all">查看全部</a>
+                </div>
+                <div class="content-slider">
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #667eea, #764ba2);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>奥本海默</h3>
+                            <span>2023 · 传记 · 剧情</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #f093fb, #f5576c);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>芭比</h3>
+                            <span>2023 · 喜剧 · 奇幻</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #4facfe, #00f2fe);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>阿凡达2</h3>
+                            <span>2022 · 科幻 · 冒险</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #43e97b, #38f9d7);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>碟中谍7</h3>
+                            <span>2023 · 动作 · 冒险</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #fa709a, #fee140);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>银河护卫队3</h3>
+                            <span>2023 · 动作 · 科幻</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #a8edea, #fed6e3);">
+                            <div class="card-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3>疯狂元素城</h3>
+                            <span>2023 · 动画 · 家庭</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Series -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row-header">
+                    <h2>热门剧集</h2>
+                    <a href="#" class="see-all">查看全部</a>
+                </div>
+                <div class="content-slider">
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #0f0c29, #302b63);">
+                            <span class="episode-badge">更新至第8集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>黑暗荣耀 第二季</h3>
+                            <span>2024 · 剧情 · 复仇</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #200122, #6f0000);">
+                            <span class="episode-badge">全8集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>僵尸校园</h3>
+                            <span>2022 · 恐怖 · 动作</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #232526, #414345);">
+                            <span class="episode-badge">全16集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>非常律师禹英禑</h3>
+                            <span>2022 · 剧情 · 法律</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #1e3c72, #2a5298);">
+                            <span class="episode-badge">全6集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>人选之人</h3>
+                            <span>2023 · 政治 · 剧情</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #134E5E, #71B280);">
+                            <span class="episode-badge">全10集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Moving 异能</h3>
+                            <span>2023 · 动作 · 奇幻</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #403A3E, #BE5869);">
+                            <span class="episode-badge">全8集</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>小女子</h3>
+                            <span>2022 · 悬疑 · 剧情</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anime -->
+        <section class="content-row">
+            <div class="container">
+                <div class="row-header">
+                    <h2>热门动漫</h2>
+                    <a href="#" class="see-all">查看全部</a>
+                </div>
+                <div class="content-slider">
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #ff6b6b, #feca57);"></div>
+                        <div class="card-info">
+                            <h3>咒术回战</h3>
+                            <span>2023 · 动作 · 奇幻</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #5f27cd, #341f97);"></div>
+                        <div class="card-info">
+                            <h3>进击的巨人</h3>
+                            <span>2023 · 动作 · 剧情</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #00d2d3, #54a0ff);"></div>
+                        <div class="card-info">
+                            <h3>鬼灭之刃</h3>
+                            <span>2023 · 动作 · 奇幻</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #ff9ff3, #ffeaa7);"></div>
+                        <div class="card-info">
+                            <h3>间谍过家家</h3>
+                            <span>2023 · 喜剧 · 动作</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #1dd1a1, #10ac84);"></div>
+                        <div class="card-info">
+                            <h3>我的英雄学院</h3>
+                            <span>2023 · 动作 · 校园</span>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-image" style="background: linear-gradient(45deg, #ee5a24, #f0932b);"></div>
+                        <div class="card-info">
+                            <h3>链锯人</h3>
+                            <span>2022 · 动作 · 恐怖</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <a href="#">常见问题</a>
+                    <a href="#">帮助中心</a>
+                    <a href="#">账户</a>
+                    <a href="#">媒体中心</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">投资者关系</a>
+                    <a href="#">工作机会</a>
+                    <a href="#">礼品卡使用条款</a>
+                    <a href="#">隐私政策</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Cookie偏好设置</a>
+                    <a href="#">法律声明</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">联系我们</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StreamBox. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

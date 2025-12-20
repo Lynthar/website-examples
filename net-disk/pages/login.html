@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - NetDisk</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-form-container">
+                <a href="../index.html" class="logo" style="margin-bottom: 40px;">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#0052CC"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span>NetDisk</span>
+                </a>
+                <h1>登录您的账户</h1>
+                <p class="subtitle">欢迎回来，请输入您的登录信息</p>
+
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>企业邮箱</label>
+                        <input type="email" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input type="password" placeholder="输入密码" required>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.9rem; color: #5E6C84;">
+                            <input type="checkbox" style="width: auto;">
+                            记住登录状态
+                        </label>
+                        <a href="#" style="color: #0052CC; text-decoration: none; font-size: 0.9rem;">忘记密码？</a>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block" style="padding: 14px;">登录</button>
+                </form>
+
+                <div style="margin: 32px 0; text-align: center; position: relative;">
+                    <span style="background: white; padding: 0 16px; color: #7A869A; font-size: 0.9rem; position: relative; z-index: 1;">或使用以下方式</span>
+                    <div style="position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: #DFE1E6;"></div>
+                </div>
+
+                <div style="display: flex; gap: 12px;">
+                    <button class="btn-outline" style="flex: 1; padding: 12px;">
+                        企业微信
+                    </button>
+                    <button class="btn-outline" style="flex: 1; padding: 12px;">
+                        钉钉
+                    </button>
+                </div>
+
+                <p style="text-align: center; margin-top: 32px; color: #5E6C84; font-size: 0.9rem;">
+                    还没有账户？ <a href="register.html" style="color: #0052CC; text-decoration: none; font-weight: 500;">立即注册</a>
+                </p>
+            </div>
+        </div>
+        <div class="auth-right">
+            <div class="auth-info">
+                <h2>企业级云存储</h2>
+                <p>安全、高效、智能的数据管理平台</p>
+                <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left; max-width: 300px;">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <span style="opacity: 0.9;">银行级数据加密</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <span style="opacity: 0.9;">团队协作无缝衔接</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <span style="opacity: 0.9;">7×24 技术支持</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
