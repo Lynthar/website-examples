@@ -1,6 +1,19 @@
 // PlayHub - Casual Gaming JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle empty anchor links with coming soon notification
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+        if (!anchor.classList.contains('category-pill')) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const linkText = this.textContent.trim();
+                if (linkText) {
+                    showNotification(`「${linkText}」即将上线`);
+                }
+            });
+        }
+    });
+
     // Category pills
     const categoryPills = document.querySelectorAll('.category-pill');
     categoryPills.forEach(pill => {

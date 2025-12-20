@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - CloudDrive</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card">
+            <div class="logo" style="justify-content: center; margin-bottom: 30px;">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+                <span style="color: #667eea;">CloudDrive</span>
+            </div>
+            <h2>创建账户</h2>
+            <p class="subtitle">注册即可获得15GB免费存储空间</p>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" placeholder="请输入用户名" required>
+                </div>
+                <div class="form-group">
+                    <label>邮箱地址</label>
+                    <input type="email" placeholder="请输入邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" placeholder="请设置密码（至少6位）" required>
+                </div>
+                <div class="form-group">
+                    <label>确认密码</label>
+                    <input type="password" placeholder="请再次输入密码" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.9rem; color: #718096;">
+                        <input type="checkbox" style="width: auto; margin-top: 4px;" required>
+                        <span>我已阅读并同意 <a href="terms.html" style="color: #667eea;">服务条款</a> 和 <a href="privacy.html" style="color: #667eea;">隐私政策</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">注册</button>
+            </form>
+
+            <div style="margin: 30px 0; text-align: center; position: relative;">
+                <span style="background: white; padding: 0 15px; color: #a0aec0; font-size: 0.9rem; position: relative; z-index: 1;">或使用以下方式注册</span>
+                <div style="position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: #e2e8f0;"></div>
+            </div>
+
+            <div style="display: flex; gap: 15px;">
+                <button class="btn btn-outline" style="flex: 1;">Google</button>
+                <button class="btn btn-outline" style="flex: 1;">微信</button>
+            </div>
+
+            <div class="auth-footer">
+                已有账户？ <a href="login.html">立即登录</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

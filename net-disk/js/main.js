@@ -10,13 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll
+    // Handle anchor links - smooth scroll or coming soon notification
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const href = this.getAttribute('href');
+            if (href === '#') {
+                const linkText = this.textContent.trim();
+                showNotification(`「${linkText}」功能即将上线`);
+            } else {
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         });
     });
@@ -149,3 +155,41 @@ function animateValue(element) {
         element.textContent = Math.floor(current) + suffix;
     }, 16);
 }
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 14px 24px;
+        background: #0052CC;
+        color: white;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        box-shadow: 0 4px 12px rgba(0, 82, 204, 0.3);
+        z-index: 9999;
+        animation: slideIn 0.3s ease;
+    `;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => notification.remove(), 300);
+    }, 2500);
+}
+
+// Add animation styles
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+    }
+`;
+document.head.appendChild(style);

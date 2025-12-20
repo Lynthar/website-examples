@@ -1,6 +1,17 @@
 // StreamBox - Streaming Platform JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle empty anchor links with coming soon notification
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const linkText = this.textContent.trim();
+            if (linkText) {
+                showNotification(`「${linkText}」即将上线`);
+            }
+        });
+    });
+
     // Header scroll effect
     const header = document.querySelector('.header');
     if (header) {

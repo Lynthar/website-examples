@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - GameZone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .cart-page { padding-top: 90px; min-height: 100vh; }
+        .cart-container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .cart-header { margin-bottom: 30px; }
+        .cart-header h1 { font-family: 'Rajdhani', sans-serif; font-size: 2rem; }
+        .cart-content { display: grid; grid-template-columns: 1fr 350px; gap: 30px; }
+        .cart-items { display: flex; flex-direction: column; gap: 16px; }
+        .cart-item { display: flex; gap: 20px; background: var(--dark-200); padding: 20px; border-radius: 12px; }
+        .cart-item .cover { width: 180px; height: 100px; border-radius: 8px; flex-shrink: 0; }
+        .cart-item .info { flex: 1; }
+        .cart-item .info h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .cart-item .info .platform { font-size: 0.85rem; color: var(--gray); margin-bottom: 12px; }
+        .cart-item .info .remove { color: var(--accent); cursor: pointer; font-size: 0.9rem; }
+        .cart-item .price { text-align: right; }
+        .cart-item .price .current { font-size: 1.25rem; font-weight: 700; color: var(--primary-light); }
+        .cart-item .price .original { font-size: 0.9rem; color: var(--gray); text-decoration: line-through; }
+        .cart-summary { background: var(--dark-200); padding: 30px; border-radius: 12px; height: fit-content; position: sticky; top: 100px; }
+        .cart-summary h2 { font-size: 1.25rem; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--dark-400); }
+        .summary-row { display: flex; justify-content: space-between; margin-bottom: 12px; color: var(--gray); }
+        .summary-row.total { color: var(--light); font-size: 1.25rem; font-weight: 700; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--dark-400); }
+        .checkout-btn { width: 100%; padding: 16px; background: var(--gradient-primary); border: none; border-radius: 8px; color: white; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 20px; transition: all 0.3s; }
+        .checkout-btn:hover { box-shadow: 0 0 30px rgba(108, 92, 231, 0.4); }
+        .continue-shopping { display: block; text-align: center; margin-top: 16px; color: var(--primary-light); text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">🎮</span>
+                    <span class="logo-text">GameZone</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">商店</a></li>
+                    <li><a href="library.html">游戏库</a></li>
+                    <li><a href="community.html">社区</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-btn">🛒 <span class="cart-count">3</span></a>
+                <a href="login.html" class="user-btn">登录</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h1>🛒 购物车</h1>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="cover" style="background: linear-gradient(45deg, #1a1a2e, #16213e);"></div>
+                        <div class="info">
+                            <h3>赛博朋克 2088</h3>
+                            <p class="platform">PC · 数字版</p>
+                            <span class="remove">🗑️ 移除</span>
+                        </div>
+                        <div class="price">
+                            <div class="current">¥298</div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cover" style="background: linear-gradient(45deg, #667eea, #764ba2);"></div>
+                        <div class="info">
+                            <h3>艾尔登法环</h3>
+                            <p class="platform">PC · 数字版</p>
+                            <span class="remove">🗑️ 移除</span>
+                        </div>
+                        <div class="price">
+                            <div class="original">¥298</div>
+                            <div class="current">¥149</div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cover" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                        <div class="info">
+                            <h3>荒野大镖客2</h3>
+                            <p class="platform">PC · 数字版</p>
+                            <span class="remove">🗑️ 移除</span>
+                        </div>
+                        <div class="price">
+                            <div class="original">¥249</div>
+                            <div class="current">¥99</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h2>订单摘要</h2>
+                    <div class="summary-row">
+                        <span>商品数量</span>
+                        <span>3 件</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>商品金额</span>
+                        <span>¥845</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>折扣优惠</span>
+                        <span style="color: #00b894;">-¥299</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>应付金额</span>
+                        <span>¥546</span>
+                    </div>
+                    <button class="checkout-btn">前往结算</button>
+                    <a href="../index.html" class="continue-shopping">← 继续购物</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
