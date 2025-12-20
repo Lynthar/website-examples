@@ -1,6 +1,17 @@
 // VideoPortal - Video Portal JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle empty anchor links with coming soon notification
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const linkText = this.textContent.trim();
+            if (linkText) {
+                showNotification(`「${linkText}」功能即将开放`);
+            }
+        });
+    });
+
     // Tab buttons
     const tabBtns = document.querySelectorAll('.tab-btn');
     tabBtns.forEach(btn => {

@@ -315,6 +315,28 @@ body {
     overflow: hidden;
 }
 
+/* Poster title overlay for realistic look */
+.card-image::before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 50%);
+    pointer-events: none;
+}
+
 .card-overlay {
     position: absolute;
     inset: 0;

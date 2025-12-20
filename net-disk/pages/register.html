@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - NetDisk</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-form-container">
+                <a href="../index.html" class="logo" style="margin-bottom: 40px;">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#0052CC"/>
+                            <path d="M12 20L20 12L28 20L20 28L12 20Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span>NetDisk</span>
+                </a>
+                <h1>创建企业账户</h1>
+                <p class="subtitle">免费试用30天，无需信用卡</p>
+
+                <form class="auth-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="form-group">
+                            <label>姓</label>
+                            <input type="text" placeholder="姓氏" required>
+                        </div>
+                        <div class="form-group">
+                            <label>名</label>
+                            <input type="text" placeholder="名字" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>企业邮箱</label>
+                        <input type="email" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>公司名称</label>
+                        <input type="text" placeholder="您的公司名称" required>
+                    </div>
+                    <div class="form-group">
+                        <label>团队规模</label>
+                        <select style="width: 100%; padding: 12px 16px; border: 1px solid #C1C7D0; border-radius: 4px; font-size: 1rem;">
+                            <option>1-10人</option>
+                            <option>11-50人</option>
+                            <option>51-200人</option>
+                            <option>201-500人</option>
+                            <option>500人以上</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>设置密码</label>
+                        <input type="password" placeholder="至少8个字符" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.85rem; color: #5E6C84;">
+                            <input type="checkbox" style="width: auto; margin-top: 3px;" required>
+                            <span>我同意 NetDisk 的 <a href="#" style="color: #0052CC;">服务条款</a> 和 <a href="#" style="color: #0052CC;">隐私政策</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block" style="padding: 14px;">开始免费试用</button>
+                </form>
+
+                <p style="text-align: center; margin-top: 32px; color: #5E6C84; font-size: 0.9rem;">
+                    已有账户？ <a href="login.html" style="color: #0052CC; text-decoration: none; font-weight: 500;">登录</a>
+                </p>
+            </div>
+        </div>
+        <div class="auth-right">
+            <div class="auth-info">
+                <h2>开始您的企业云之旅</h2>
+                <p>超过500家企业的信赖之选</p>
+                <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left; max-width: 300px;">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">✓</div>
+                        <span style="opacity: 0.9;">30天免费试用</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">✓</div>
+                        <span style="opacity: 0.9;">无需信用卡</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">✓</div>
+                        <span style="opacity: 0.9;">随时取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

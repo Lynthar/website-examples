@@ -1,6 +1,17 @@
 // GameZone - Gaming Portal JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle empty anchor links with coming soon notification
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const linkText = this.textContent.trim();
+            if (linkText) {
+                showNotification(`「${linkText}」功能开发中，敬请期待`);
+            }
+        });
+    });
+
     // Carousel functionality
     const slides = document.querySelectorAll('.carousel-slide');
     const dots = document.querySelectorAll('.carousel-dot');
