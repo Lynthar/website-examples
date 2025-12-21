@@ -1,0 +1,12 @@
+# VideoPortal Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/
+Disallow: /play/
+
+# Sitemap
+Sitemap: https://www.videoportal.com/sitemap.xml
+
+Crawl-delay: 1

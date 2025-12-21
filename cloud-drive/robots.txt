@@ -1,0 +1,12 @@
+# CloudDrive Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://www.clouddrive.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
