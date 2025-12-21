@@ -1,0 +1,12 @@
+# StreamBox Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /watch/
+
+# Sitemap
+Sitemap: https://www.streambox.com/sitemap.xml
+
+Crawl-delay: 1

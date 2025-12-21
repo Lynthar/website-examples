@@ -1,0 +1,11 @@
+# PlayHub Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/
+
+# Sitemap
+Sitemap: https://www.playhub.com/sitemap.xml
+
+Crawl-delay: 1

@@ -1,0 +1,12 @@
+# GameZone Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/
+Disallow: /checkout/
+
+# Sitemap
+Sitemap: https://www.gamezone.com/sitemap.xml
+
+Crawl-delay: 1

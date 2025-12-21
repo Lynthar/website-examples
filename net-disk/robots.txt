@@ -1,0 +1,13 @@
+# NetDisk Enterprise Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /dashboard/
+
+# Sitemap
+Sitemap: https://www.netdisk.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
