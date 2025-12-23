@@ -1,0 +1,12 @@
+# MusicFlow Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/
+Disallow: /stream/
+
+# Sitemap
+Sitemap: https://www.musicflow.com/sitemap.xml
+
+Crawl-delay: 1
