@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="登录PodcastHub，开始收听优质播客内容">
+    <meta name="robots" content="noindex, nofollow">
+    <title>登录 - PodcastHub</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff5f2 0%, #fff 50%, #f0f7ff 100%);
+            min-height: 100vh;
+        }
+        .auth-container {
+            max-width: 420px;
+            margin: 80px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+        .auth-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .auth-logo a {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        .auth-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .auth-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 4px rgba(255,107,53,0.1);
+        }
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+        }
+        .remember-me input {
+            width: 16px;
+            height: 16px;
+            accent-color: #ff6b35;
+        }
+        .forgot-link {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+        .auth-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .auth-btn:hover {
+            background: linear-gradient(135deg, #e55a2b, #ff6b35);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255,107,53,0.35);
+        }
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            margin: 28px 0;
+            color: #999;
+            font-size: 0.85rem;
+        }
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e8e8e8;
+        }
+        .auth-divider span {
+            padding: 0 16px;
+        }
+        .social-login {
+            display: flex;
+            gap: 12px;
+        }
+        .social-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            background: #fff;
+            color: #333;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .social-btn:hover {
+            border-color: #ff6b35;
+            background: #fff9f7;
+        }
+        .social-btn .icon {
+            font-size: 1.2rem;
+        }
+        .auth-footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .auth-footer a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .auth-footer a:hover {
+            text-decoration: underline;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-home a {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-home a:hover {
+            color: #ff6b35;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-logo">
+            <a href="../index.html">🎙️ PodcastHub</a>
+        </div>
+
+        <h1 class="auth-title">欢迎回来</h1>
+        <p class="auth-subtitle">登录后继续收听您喜爱的播客</p>
+
+        <form id="loginForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="email">邮箱 / 手机号</label>
+                <input type="text" id="email" name="email" placeholder="请输入邮箱或手机号" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password" placeholder="请输入密码" required>
+            </div>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" name="remember">
+                    <span>记住登录</span>
+                </label>
+                <a href="#" class="forgot-link">忘记密码？</a>
+            </div>
+
+            <button type="submit" class="auth-btn">登 录</button>
+        </form>
+
+        <div class="auth-divider">
+            <span>其他登录方式</span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" class="social-btn">
+                <span class="icon">📱</span>
+                <span>微信</span>
+            </a>
+            <a href="#" class="social-btn">
+                <span class="icon">📲</span>
+                <span>手机验证码</span>
+            </a>
+        </div>
+
+        <div class="auth-footer">
+            还没有账号？<a href="register.html">立即注册</a>
+        </div>
+
+        <div class="back-home">
+            <a href="../index.html">← 返回首页</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var toast = document.createElement('div');
+            toast.textContent = '登录功能维护中';
+            toast.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#ff6b35;color:#fff;padding:12px 24px;border-radius:8px;z-index:1000;';
+            document.body.appendChild(toast);
+            setTimeout(function() { toast.remove(); }, 2500);
+        });
+    </script>
+</body>
+</html>

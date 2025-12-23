@@ -1,0 +1,12 @@
+# PodcastHub Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /user/
+Disallow: /download/
+
+# Sitemap
+Sitemap: https://www.podcasthub.com/sitemap.xml
+
+Crawl-delay: 1

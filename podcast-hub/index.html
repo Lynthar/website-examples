@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PodcastHub - 发现精彩播客，海量节目免费收听，知识、故事、访谈尽在指尖。">
+    <meta name="keywords" content="播客,podcast,有声节目,知识付费,音频节目,脱口秀">
+    <meta name="author" content="PodcastHub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.podcasthub.com/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+    <title>PodcastHub - 发现精彩播客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Analytics -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?podcasthub001";
+            /* var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); */ // Disabled
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎙️</span>
+                <span class="logo-text">PodcastHub</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">发现</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">分类</a></li>
+                <li><a href="#">订阅</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" placeholder="搜索播客或单集...">
+                <button>🔍</button>
+            </div>
+            <div class="nav-actions">
+                <a href="pages/login.html" class="btn btn-text">登录</a>
+                <a href="pages/register.html" class="btn btn-primary">免费注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">🔥 本周热门</span>
+                    <h1>故事FM</h1>
+                    <p class="hero-description">用你的声音，讲述你的故事。每一个普通人都有不普通的人生经历，每一段故事都值得被听见。</p>
+                    <div class="hero-meta">
+                        <span class="meta-item">📻 社会人文</span>
+                        <span class="meta-item">⭐ 9.5分</span>
+                        <span class="meta-item">👥 12.8万订阅</span>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large">▶ 立即收听</button>
+                        <button class="btn btn-outline btn-large">+ 订阅</button>
+                    </div>
+                </div>
+                <div class="hero-cover">
+                    <div class="cover-image" style="background: linear-gradient(135deg, #ff6b6b, #feca57);"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continue Listening -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>继续收听</h2>
+                    <a href="#" class="see-all">查看全部 →</a>
+                </div>
+                <div class="episode-list">
+                    <div class="episode-card">
+                        <div class="episode-cover" data-title="故事FM" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <div class="play-progress" style="width: 65%;"></div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="episode-info">
+                            <span class="episode-podcast">故事FM</span>
+                            <h3>E521. 我在看守所的30天</h3>
+                            <p class="episode-desc">一位亲历者讲述他在看守所的经历，关于失去自由的日子...</p>
+                            <div class="episode-meta">
+                                <span>剩余 18 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <div class="episode-cover" data-title="商业就是这样" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                            <div class="play-progress" style="width: 30%;"></div>
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <div class="episode-info">
+                            <span class="episode-podcast">商业就是这样</span>
+                            <h3>Vol.156 为什么年轻人不愿意买车了</h3>
+                            <p class="episode-desc">汽车销量下滑背后的消费观念变化...</p>
+                            <div class="episode-meta">
+                                <span>剩余 42 分钟</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Shows -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>精选节目</h2>
+                    <a href="#" class="see-all">查看全部 →</a>
+                </div>
+                <div class="podcast-grid">
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="日谈公园" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <div class="podcast-badge">TOP 1</div>
+                        </div>
+                        <h3>日谈公园</h3>
+                        <p>一档有趣的闲聊节目</p>
+                        <span class="podcast-category">脱口秀</span>
+                    </div>
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="随机波动" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <div class="podcast-badge">TOP 2</div>
+                        </div>
+                        <h3>随机波动</h3>
+                        <p>文化沙龙式对话</p>
+                        <span class="podcast-category">文化</span>
+                    </div>
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="忽左忽右" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                            <div class="podcast-badge">TOP 3</div>
+                        </div>
+                        <h3>忽左忽右</h3>
+                        <p>硬核文史知识</p>
+                        <span class="podcast-category">历史</span>
+                    </div>
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="无人知晓" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);"></div>
+                        <h3>无人知晓</h3>
+                        <p>孟岩的投资与人生</p>
+                        <span class="podcast-category">商业</span>
+                    </div>
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="声东击西" style="background: linear-gradient(135deg, #fd79a8, #e84393);"></div>
+                        <h3>声东击西</h3>
+                        <p>探索真实世界的好奇心</p>
+                        <span class="podcast-category">社会</span>
+                    </div>
+                    <div class="podcast-card">
+                        <div class="podcast-cover" data-title="文化有限" style="background: linear-gradient(135deg, #00b894, #00cec9);"></div>
+                        <h3>文化有限</h3>
+                        <p>用书影音记录生活</p>
+                        <span class="podcast-category">文化</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Episodes -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>最新单集</h2>
+                    <a href="#" class="see-all">查看全部 →</a>
+                </div>
+                <div class="latest-list">
+                    <div class="latest-item">
+                        <div class="latest-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                        <div class="latest-content">
+                            <span class="latest-podcast">科技乱炖</span>
+                            <h3>AI会取代程序员吗？我们和5位开发者聊了聊</h3>
+                            <p>随着AI编程工具的普及，程序员的工作方式正在发生变化。我们邀请了5位不同背景的开发者，分享他们的看法。</p>
+                            <div class="latest-meta">
+                                <span>2小时前</span>
+                                <span>•</span>
+                                <span>58分钟</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-icon">▶</button>
+                    </div>
+                    <div class="latest-item">
+                        <div class="latest-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                        <div class="latest-content">
+                            <span class="latest-podcast">故事FM</span>
+                            <h3>E522. 我的父亲是"老赖"</h3>
+                            <p>一个关于亲情、信任与成长的故事，当最亲近的人让你失望...</p>
+                            <div class="latest-meta">
+                                <span>5小时前</span>
+                                <span>•</span>
+                                <span>45分钟</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-icon">▶</button>
+                    </div>
+                    <div class="latest-item">
+                        <div class="latest-cover" style="background: linear-gradient(135deg, #11998e, #38ef7d);"></div>
+                        <div class="latest-content">
+                            <span class="latest-podcast">商业就是这样</span>
+                            <h3>Vol.157 拼多多出海的秘密武器</h3>
+                            <p>Temu如何在一年内成为美国下载量最高的购物App...</p>
+                            <div class="latest-meta">
+                                <span>昨天</span>
+                                <span>•</span>
+                                <span>62分钟</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-icon">▶</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2>浏览分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #667eea, #764ba2);">
+                        <span class="category-icon">💼</span>
+                        <span class="category-name">商业</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <span class="category-icon">🎭</span>
+                        <span class="category-name">脱口秀</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <span class="category-icon">📚</span>
+                        <span class="category-name">文化</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #fa709a, #fee140);">
+                        <span class="category-icon">🔬</span>
+                        <span class="category-name">科技</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+                        <span class="category-icon">🏛️</span>
+                        <span class="category-name">历史</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #00b894, #00cec9);">
+                        <span class="category-icon">❤️</span>
+                        <span class="category-name">情感</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #fdcb6e, #e17055);">
+                        <span class="category-icon">🎵</span>
+                        <span class="category-name">音乐</span>
+                    </a>
+                    <a href="#" class="category-card" style="--bg: linear-gradient(135deg, #74b9ff, #0984e3);">
+                        <span class="category-icon">🌍</span>
+                        <span class="category-name">社会</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🎙️</span>
+                        <span class="logo-text">PodcastHub</span>
+                    </div>
+                    <p>发现精彩播客，聆听不同声音</p>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <a href="#">关于我们</a>
+                    <a href="#">加入我们</a>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="footer-links">
+                    <h4>帮助</h4>
+                    <a href="#">帮助中心</a>
+                    <a href="#">创作者入驻</a>
+                    <a href="#">广告合作</a>
+                </div>
+                <div class="footer-links">
+                    <h4>法律</h4>
+                    <a href="pages/privacy.html">隐私政策</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">版权声明</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 PodcastHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mini Player -->
+    <div class="mini-player">
+        <div class="player-track">
+            <div class="player-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+            <div class="player-info">
+                <h4>E521. 我在看守所的30天</h4>
+                <p>故事FM</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="btn-icon">⏮</button>
+            <button class="btn-play">▶</button>
+            <button class="btn-icon">⏭</button>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+            <span class="time">18:32 / 46:15</span>
+        </div>
+        <div class="player-extra">
+            <button class="btn-icon">1x</button>
+            <button class="btn-icon">🔊</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
