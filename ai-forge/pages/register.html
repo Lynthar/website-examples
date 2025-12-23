@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="注册AIForge账号 - 免费获得$5额度，接入全球主流AI模型">
+    <meta name="robots" content="noindex, nofollow">
+    <title>免费注册 - AIForge</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #10b981;
+            --bg-dark: #0f172a;
+            --bg-darker: #020617;
+            --bg-card: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #334155;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background: var(--bg-darker);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .auth-container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .auth-logo {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .auth-logo a {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .auth-logo span:last-child {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .welcome-bonus {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        .welcome-bonus .emoji {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        .welcome-bonus .title {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        .welcome-bonus .desc {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        .auth-title {
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 28px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 13px 16px;
+            background: var(--bg-darker);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        .form-group input::placeholder {
+            color: var(--text-muted);
+        }
+        .password-hint {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+        .password-strength {
+            height: 4px;
+            background: var(--bg-darker);
+            border-radius: 2px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .password-strength-bar {
+            height: 100%;
+            width: 0;
+            transition: all 0.3s ease;
+        }
+        .agree-terms {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 20px 0 24px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .agree-terms input {
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+            accent-color: var(--primary);
+        }
+        .agree-terms a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .agree-terms a:hover {
+            text-decoration: underline;
+        }
+        .auth-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .auth-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(99, 102, 241, 0.4);
+        }
+        .auth-divider {
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .auth-divider::before,
+        .auth-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .auth-divider span {
+            padding: 0 16px;
+        }
+        .social-login {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            background: var(--bg-darker);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .social-btn:hover {
+            border-color: var(--primary);
+            color: var(--text-primary);
+        }
+        .auth-footer {
+            text-align: center;
+            margin-top: 24px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .auth-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 16px;
+        }
+        .back-home a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-home a:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-logo">
+            <a href="../index.html">
+                <span>🤖</span>
+                <span>AIForge</span>
+            </a>
+        </div>
+
+        <div class="welcome-bonus">
+            <div class="emoji">🎁</div>
+            <div class="title">新用户专享</div>
+            <div class="desc">注册即送 $5 API 调用额度，无需信用卡</div>
+        </div>
+
+        <h1 class="auth-title">创建您的账户</h1>
+
+        <form id="registerForm" onsubmit="return false;">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">名</label>
+                    <input type="text" id="firstName" placeholder="名" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">姓</label>
+                    <input type="text" id="lastName" placeholder="姓" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">邮箱地址</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">公司/组织（可选）</label>
+                <input type="text" id="company" placeholder="公司名称">
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" placeholder="至少8位字符" required>
+                <div class="password-strength">
+                    <div class="password-strength-bar"></div>
+                </div>
+                <div class="password-hint">建议包含大小写字母、数字和特殊字符</div>
+            </div>
+
+            <label class="agree-terms">
+                <input type="checkbox" name="agree" required>
+                <span>我已阅读并同意 <a href="privacy.html">隐私政策</a> 和 <a href="#">服务条款</a>，并接收产品更新邮件</span>
+            </label>
+
+            <button type="submit" class="auth-btn">注册并开始使用</button>
+        </form>
+
+        <div class="auth-divider">
+            <span>或使用第三方注册</span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" class="social-btn">
+                <span>📦</span>
+                <span>GitHub</span>
+            </a>
+            <a href="#" class="social-btn">
+                <span>🔷</span>
+                <span>Google</span>
+            </a>
+        </div>
+
+        <div class="auth-footer">
+            已有账号？<a href="login.html">立即登录</a>
+        </div>
+
+        <div class="back-home">
+            <a href="../index.html">← 返回首页</a>
+        </div>
+    </div>
+
+    <script>
+        // Password strength
+        document.getElementById('password').addEventListener('input', function() {
+            var strength = 0;
+            var val = this.value;
+            if (val.length >= 8) strength += 25;
+            if (/[a-z]/.test(val) && /[A-Z]/.test(val)) strength += 25;
+            if (/\d/.test(val)) strength += 25;
+            if (/[^a-zA-Z0-9]/.test(val)) strength += 25;
+
+            var bar = document.querySelector('.password-strength-bar');
+            bar.style.width = strength + '%';
+            bar.style.background = strength < 50 ? '#ef4444' : strength < 75 ? '#f59e0b' : '#10b981';
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var toast = document.createElement('div');
+            toast.textContent = '注册功能维护中';
+            toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1e293b;color:#f8fafc;padding:14px 28px;border-radius:10px;border:1px solid #334155;z-index:1000;';
+            document.body.appendChild(toast);
+            setTimeout(function() { toast.remove(); }, 2500);
+        });
+
+        document.querySelectorAll('a[href="#"]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var toast = document.createElement('div');
+                toast.textContent = '功能开发中';
+                toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1e293b;color:#f8fafc;padding:14px 28px;border-radius:10px;border:1px solid #334155;z-index:1000;';
+                document.body.appendChild(toast);
+                setTimeout(function() { toast.remove(); }, 2500);
+            });
+        });
+    </script>
+</body>
+</html>
